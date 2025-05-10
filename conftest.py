@@ -28,16 +28,16 @@ def driver_do(request):
     driver.quit()
 
 
-@pytest.fixture(scope='function')
-def pages(driver_do):
-    """инициализирует класс с selenium driver"""
-    driver = driver_do
-    pages = UIWorkerWeb(driver, UIWorkerLocators())
-    return pages
+#@pytest.fixture(scope='function')
+#def pages(driver_do):
+   # """инициализирует класс с selenium driver"""
+    #driver = driver_do
+    #pages = UIWorkerWeb(driver, UIWorkerLocators())
+    #return pages
 
-@pytest.fixture(scope='function')
-def login(pages):
-    """ Войти в аккаунт """
-    pages.login()
+#@pytest.fixture(scope='function')
+#def login(pages):
+    #""" Войти в аккаунт """
+    #pages.login()
 
 

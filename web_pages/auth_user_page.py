@@ -28,10 +28,10 @@ class AuthUserPage(BasePage):
         self.wait_for_element_to_be_clickable(MainPageLocators.PROFILE_BUTTON)
 
     @allure.step('Авторизация')
-    def login(self):
+    def login(self, login, password):
         self.click_personal_account_button()
-        self.set_email_field(PersonData.user_login)
-        self.set_password_field(PersonData.user_password)
+        self.set_email_field(login)
+        self.set_password_field(password)
         self.click_login_button()
 
     @allure.step('Проверяем переход на страницу Авторизации')

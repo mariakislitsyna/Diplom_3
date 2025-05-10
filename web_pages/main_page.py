@@ -64,7 +64,6 @@ class MainPage(BasePage):
     @allure.step('Получение ORDER_ID')
     def get_with_order_id(self):
         self.wait_until_element_visibility(MainPageLocators.ORDER_IDENTIFICATE)
-        # self.wait_until_element_visibility(MainPageLocators.ORDER_ID)
         order_id = self.get_actually_text(MainPageLocators.ORDER_ID)
         while order_id == '9999':
             order_id = self.get_actually_text(MainPageLocators.ORDER_ID)
