@@ -5,9 +5,3 @@ from web_pages.recovery_password_page import PasswordRecoveryPage
 from web_pages.test_create_order_page import CreateOrderPage
 from web_pages.user_profile_page import UserProfilePage
 
-
-#class UIWorkerWeb(MainPage, AuthUserPage, PasswordRecoveryPage, UserProfilePage, CreateOrderPage):
-    #"""Класс объединяет все классы по работе со страницами используя множественно наследование"""
-    #def __init__(self, driver, locators):
-        #super().__init__(driver)
-        #self.locators = locators

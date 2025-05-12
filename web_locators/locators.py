@@ -14,7 +14,7 @@ class MainPageLocators:
     ORDER_BASKET = (By.XPATH, "//span[@class='constructor-element__text' and text()='Перетяните булочку сюда (низ)']")
     CREATE_ORDER_BUTTON = By.XPATH, '//button[text()="Оформить заказ"]'  # кнопка "Оформить заказ"
     ORDER_IDENTIFICATE = (By.XPATH, '//p[text()="идентификатор заказа"]')  # Идентификатор заказа
-    ORDER_ID = (By.XPATH, '//h2[contains(@class, "Modal_modal__title") and text()="9999"]')
+    ORDER_ID = (By.XPATH, "//h2[contains(@class, 'Modal_modal__title') and contains(text(), ' ')]")
     LOADING_CHECK_BOX = (By.XPATH, ".//img[@alt='tick animation']")
     ORDER_STATUS_TEXT = By.XPATH, '//p[text()="Ваш заказ начали готовить"]'  # Ваш заказ начали готовить в попапе
     CLOSE_MODAL_ORDER = (By.XPATH, "//button[contains(@class, 'Modal_modal__close')][1]")

@@ -6,7 +6,6 @@ from selenium import webdriver
 
 from data.urls import Urls
 from web_locators import UIWorkerLocators
-from web_pages import UIWorkerWeb
 
 
 @allure.step('Открытие браузер')
@@ -26,18 +25,5 @@ def driver_do(request):
         driver.get(Urls.url_main)
     yield driver
     driver.quit()
-
-
-#@pytest.fixture(scope='function')
-#def pages(driver_do):
-   # """инициализирует класс с selenium driver"""
-    #driver = driver_do
-    #pages = UIWorkerWeb(driver, UIWorkerLocators())
-    #return pages
-
-#@pytest.fixture(scope='function')
-#def login(pages):
-    #""" Войти в аккаунт """
-    #pages.login()
 
 
